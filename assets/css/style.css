@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* ---------------------------------------Colors */
+/* ------------------------------------------------Colors */
 body {
     background-color: #f1c40f;
 }
@@ -22,12 +22,59 @@ h6 {
     padding: 0;
 }
 
-/* ---------------------------------------Logo */
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.text {
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------Logo*/
 
 .logo > h1 {
-    font-family: "press start 2p";
+    font-family: "press start 2p", sans-serif;
     color: #3498db;
     text-align: center;
     font-size: 50px;
     padding: 10px 0 5px 0;
+}
+
+/* ------------------------------------------------Containers */
+
+#outer-container {
+    background: #95a5a6;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    border: 10px solid black;
+}
+
+#inner-container {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+#score {
+    
+}
+
+#turn {
+    background: black;
+    width: 70px;
+    height: 30px;
+    color: red;
 }
