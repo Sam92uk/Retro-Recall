@@ -68,8 +68,25 @@ h6 {
     text-align: center;
 }
 
-#score {
-    
+#title {
+    position: relative;
+    top: 50%;
+    font-family: "press start 2p", sans-serif;
+}
+
+#start {
+    position: relative;
+    top: 50%;
+    border-radius: 50%;
+    background: #3498db;
+    width: 70px;
+    height: 40px;
+    margin: auto;
+}
+
+#start > p {
+    margin: auto;
+    padding-top: 7px;
 }
 
 #turn {
@@ -77,4 +94,7 @@ h6 {
     width: 70px;
     height: 30px;
     color: red;
+    margin: auto;
+    top: 50%;
+    position: relative;
 }
