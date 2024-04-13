@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* ------------------------------------------------Colors */
 body {
-    background-color: #f1c40f;
+    background: #95a5a6;
+}
+
+.logo {
+    background: #f1c40f;
 }
 
 /* ------------------------------------------------Special Margins, Text, paddings */
@@ -33,7 +38,7 @@ h6 {
 
 .text {
     color: black;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
@@ -66,6 +71,7 @@ h6 {
     display: grid;
     align-items: center;
     text-align: center;
+    background: #95a5a6;
 }
 
 #title {
@@ -78,7 +84,7 @@ h6 {
     position: relative;
     top: 50%;
     border-radius: 50%;
-    background: #3498db;
+    background: #ffffff;
     width: 70px;
     height: 40px;
     margin: auto;
@@ -86,7 +92,7 @@ h6 {
 
 #start > p {
     margin: auto;
-    padding-top: 7px;
+    padding-top: 8px;
 }
 
 #turn {
@@ -98,3 +104,61 @@ h6 {
     top: 50%;
     position: relative;
 }
+
+/* ------------------------------------------------Tiles */
+
+#green-tile {
+    position: absolute;
+    height: 255px;
+    width: 255px;
+    border-radius: 250px 0 0 0;
+    background: darkgreen;
+    top: 49%;
+    left: 49%;
+    margin: -250px 0px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+}
+
+#red-tile {
+    position: absolute;
+    height: 255px;
+    width: 255px;
+    border-radius: 0 250px 0 0;
+    background: darkred;
+    top: 49%;
+    left: 50%;
+    margin: -250px 0px 0px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+ }
+
+ #yellow-tile {
+    position: absolute;
+    height: 255px;
+    width: 255px;
+    border-radius: 0 0 0 250px;
+    background: goldenrod;
+    top: 50%;
+    left: 49%;
+    margin: 0px -250px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+ }
+
+ #blue-tile {
+    position: absolute;
+    height: 255px;
+    width: 255px;
+    border-radius: 0 0 250px 0;
+    background: darkblue;
+    top: 50%;
+    left: 50%;
+    margin: 0px 0px -250px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+ }
